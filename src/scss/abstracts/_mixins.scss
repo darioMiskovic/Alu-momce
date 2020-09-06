@@ -1,0 +1,60 @@
+@mixin flex-center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+%btn-prim-sec {
+    font-family:'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+    
+    padding: 0.8rem 1rem;
+    text-transform: uppercase;
+    margin: 3rem 0;
+    transition: all .2s;
+    cursor: pointer;
+   
+    &:hover{
+        background-color: #f89725;
+        border: 3px solid #f89725;
+        color:#fff;
+    }
+}
+
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+
+[1200 - 1800] is where our normal styles apply
+
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    
+}
+

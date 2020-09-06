@@ -1,0 +1,40 @@
+
+.heading-primary{
+    font-family: $font-barHeading;
+    color: $color-primary;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 7rem 0 2rem 0;
+
+    //Media Query
+    @include  respond(tab-port){
+        text-align: center;
+        margin: 7rem 0 4rem 0;
+        font-size: 3rem;
+    }
+}
+
+.heading-secondary{
+    font-family: $font-barHeading;
+    color: $color-primary;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 4rem
+   
+}
+
+.heading-secondary-white{
+    font-family: $font-barHeading;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 4rem
+}
+
+
+
+
+
