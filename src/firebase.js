@@ -6,7 +6,7 @@ import 'firebase/storage';
 
  
   const config = {
-    //Use yours firebase config app
+    //Config your own app in firebase
   };
 
   // Initialize Firebase
