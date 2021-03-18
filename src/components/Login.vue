@@ -33,8 +33,8 @@ export default {
     data(){
         return{
             //promjeniti!!!!!!**************
-            email: 'alumomce@gmail.com',
-            password: 'arsenal'
+            email: '*******',
+            password: '*******'
         }
     },
     methods:{
